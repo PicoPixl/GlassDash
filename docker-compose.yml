@@ -1,0 +1,18 @@
+services:
+  glassdash:
+    build: .
+    container_name: glassdash
+    restart: unless-stopped
+    ports:
+      - "4422:80"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - NODE_ENV=production
+      - PORT=80
+    networks:
+      - glassdash_net
+
+networks:
+  glassdash_net:
+    driver: bridge

@@ -1,0 +1,5 @@
+{
+  "name": "GlassDash",
+  "description": "A beautiful, self-hostable start page with glassmorphic design, custom links, and RSS integration.",
+  "requestFramePermissions": []
+}
