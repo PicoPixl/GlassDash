@@ -9,9 +9,9 @@ A beautiful, self-hostable start page with glassmorphic design, custom links, an
 - 🎨 **Glassmorphic Design**: Modern UI with real-time blur effects.
 - 🌈 **Themes**: 10 built-in gradient themes.
 - 🔗 **Link Management**: Add, edit, and remove custom shortcuts.
+- ☁️ **Server-Side Sync**: Links and settings are stored centralized on the server. Access your dashboard from any device (Desktop, Mobile, Tablet) and see the same links.
 - 📰 **RSS Feed**: Integrated news reader with dual-fetch strategy (CORS proxy fallback).
-- 💾 **Persistence**: All data stored server-side in a JSON file.
-- 🐳 **Docker Ready**: One-click deployment.
+- 🐳 **Docker Ready**: One-click deployment with a lightweight Node.js server.
 
 ## Deployment
 
@@ -20,12 +20,15 @@ A beautiful, self-hostable start page with glassmorphic design, custom links, an
 1.  Clone this repository.
 2.  Run the container:
     ```bash
-    docker-compose up -d
+    docker-compose up -d --build
     ```
 3.  Access the dashboard at `http://localhost:4422`.
 
 ### Data Persistence
-The `docker-compose.yml` file maps a local `./data` folder to the container. Your links and settings will be saved in `./data/settings.json`. Back up this file to save your configuration.
+The application uses a **Server-Authoritative** model. The `docker-compose.yml` file maps a local `./data` folder to the container. 
+*   Your links and settings are saved in `./data/settings.json`.
+*   **Back up this file** to save your configuration.
+*   If you delete this file, the server will recreate it with default links on the next restart.
 
 ## Security Warning
 
