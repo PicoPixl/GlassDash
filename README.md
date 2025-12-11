@@ -34,7 +34,3 @@ This application was designed and architected with the assistance of Artificial 
 ## License
 
 MIT
-
-## Other Notes
-
-This application created with the assistance of AI.
