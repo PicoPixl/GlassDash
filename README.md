@@ -34,3 +34,7 @@ The `docker-compose.yml` file maps a local `./data` folder to the container. You
 ## Transparency Note
 
 This application was designed and architected with the assistance of Artificial Intelligence (AI). While every effort has been made to ensure code quality and security, users are encouraged to review the code before deployment in sensitive environments.
+
+## License
+
+MIT License
