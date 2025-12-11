@@ -2,6 +2,8 @@
 
 A beautiful, self-hostable start page with glassmorphic design, custom links, and RSS integration.
 
+<img width="2158" height="1313" alt="image" src="https://github.com/user-attachments/assets/b911bbdc-4392-49a2-ab04-825f8b24eae3" />
+
 ## Features
 
 - 🎨 **Glassmorphic Design**: Modern UI with real-time blur effects.
